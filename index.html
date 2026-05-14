@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Java Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero-section {
+            background: #212529;
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+        .nav-pills .nav-link {
+            border-radius: 20px;
+            padding: 10px 25px;
+            font-weight: 500;
+            color: #495057;
+        }
+        .nav-pills .nav-link.active {
+            background-color: #0d6efd;
+        }
+        .card {
+            border: none;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .btn-github {
+            background-color: #24292e;
+            color: white;
+        }
+        .btn-github:hover {
+            background-color: #444;
+            color: white;
+        }
+        .badge-tech {
+            font-size: 0.8rem;
+            margin-right: 5px;
+            background-color: #e9ecef;
+            color: #495057;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Java Developer Portfolio</h1>
+        <p class="lead">A showcase of my programming journey and projects</p>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <!-- Tabs Navigation -->
+    <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="core-tab" data-bs-toggle="pill" data-bs-target="#core-content" type="button">Java Core</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link mx-2" id="advanced-tab" data-bs-toggle="pill" data-bs-target="#advanced-content" type="button">Java Advanced</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="major-tab" data-bs-toggle="pill" data-bs-target="#major-content" type="button">Major Projects</button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+        <!-- ======================================================================================Java Core======================================================================================= -->
+        
+        <!-- Java Core Section -->
+        <div class="tab-pane fade show active" id="core-content" role="tabpanel">
+            <div class="row g-4">
+                <!--  Java basics -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm p-3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Java Basics Exercises</h5>
+                            <p class="card-text text-muted text-justify" style="text-align: justify;">
+                                Java Number Guessing Game project built using Core Java concepts like loops, conditions, Scanner, and Random class.
+                                The game generates a random number and allows the user to guess it with hints like Too High or Too Low until the 
+                                correct answer is found.
+                            </p>
+                            <a href="https://github.com/Abdullahabdelsalam/Simple-Java-Projects/blob/main/src/number/guessing/NumberGame.java" class="btn btn-github w-100 mt-3" target="_blank">
+                                GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Methods & Arrays -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm p-3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Methods & Arrays</h5>
+                            <p class="card-text text-muted text-justify" style="text-align: justify;">
+                                Tic-Tac-Toe is a simple two-player Java game built using methods and arrays to manage
+                                the 3×3 board, player moves, and win conditions.It demonstrates core concepts like loops,
+                                condition checking, and modular programming to create an interactive console-based game.
+                            </p>
+                            <a href="https://github.com/Abdullahabdelsalam/Simple-Java-Projects/blob/main/src/tic/tac/toe/TicTacToe.java" target="_blank"
+                            class="btn btn-github w-100 mt-3">
+                                GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more Core projects here -->
+            </div>
+        </div>
+
+        <!-- =====================================================================================Java Advanced====================================================================================== -->
+        <!-- Java Advanced Section -->
+        
+        <div class="tab-pane fade" id="advanced-content" role="tabpanel">
+            <div class="row g-4">
+                <!--  Java Database Connectivity(JDBC) -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm p-3 border-top border-primary border-4">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Java Database Connectivity(JDBC) </h5>
+                            <p class="card-text text-muted text-justify" style="text-align: justify;">Mini Banking Application built using Java, JDBC, and MySQL, implementing 
+                                full CRUD operations (Create, Read, Update, Delete) with secure database connectivity and clean project 
+                                structure.The project uses PreparedStatement, reusable DBConnection setup, and DTO/Model architecture to
+                                 manage customer data efficiently.
+                            </p>
+                            <a href="https://github.com/Abdullahabdelsalam/MiniBankingAppJDBC" class="btn btn-github w-100 mt-3" target="_blank">GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Java Servlets -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm p-3 border-top border-primary border-4">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Java Servlets </h5>
+                            <p class="card-text text-muted text-justify" style="text-align: justify;">Mini Banking Application built using Java, JDBC, and MySQL, implementing 
+                                full CRUD operations (Create, Read, Update, Delete) with secure database connectivity and clean project 
+                                structure.The project uses PreparedStatement, reusable DBConnection setup, and DTO/Model architecture to
+                                 manage customer data efficiently.
+                            </p>
+                            <a href="https://github.com/Abdullahabdelsalam/MiniBankingAppJDBC" class="btn btn-github w-100 mt-3" target="_blank">GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- JSP (Java Server Pages) -->
+                  <div class="col-md-4">
+                    <div class="card h-100 shadow-sm p-3 border-top border-primary border-4">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">JSP (Java Server Pages) </h5>
+                            <p class="card-text text-muted text-justify" style="text-align: justify;">Mini Banking Application built using Java, JDBC, and MySQL, implementing 
+                                full CRUD operations (Create, Read, Update, Delete) with secure database connectivity and clean project 
+                                structure.The project uses PreparedStatement, reusable DBConnection setup, and DTO/Model architecture to
+                                 manage customer data efficiently.
+                            </p>
+                            <a href="https://github.com/Abdullahabdelsalam/MiniBankingAppJDBC" class="btn btn-github w-100 mt-3" target="_blank">GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hibernate (ORM Framework) -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm p-3 border-top border-primary border-4">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Hibernate (ORM Framework) </h5>
+                            <p class="card-text text-muted text-justify" style="text-align: justify;">
+                             Smart Hospital Management System is a Java-based backend project built using Hibernate ORM and MySQL to
+                              simulate real hospital operations. It demonstrates enterprise-level concepts such as inheritance, entity relationships 
+                              (One-to-One, One-to-Many, Many-to-Many), and CRUD operations.
+                            </p>
+                            <a href="https://github.com/Abdullahabdelsalam/Smart-Hospital-Management-System/tree/main" class="btn btn-github w-100 mt-3" target="_blank">GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Spring Core (IOC & DI & Beens) -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm p-3 border-top border-primary border-4">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold"> Spring Core (IOC & DI & Beens) </h5>
+                            <p class="card-text text-muted text-justify" style="text-align: justify;">
+                                The E-Commerce Management System is developed using Spring Core, leveraging Inversion of Control 
+                                (IoC) and Dependency Injection (DI) to achieve loose coupling and better code maintainability.
+                                It follows a modular structure where Spring manages object creation and dependencies.
+                            </p>
+                            <a href="https://github.com/Abdullahabdelsalam/ecommerce-management/tree/main" class="btn btn-github w-100 mt-3" target="_blank">GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more Core projects here -->
+            </div>
+        </div>
+
+        <!-- ======================================================================================Major Projects========================================================================================== -->
+
+        <!-- Major Projects Section -->
+        <div class="tab-pane fade" id="major-content" role="tabpanel">
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="card shadow p-4 border-start border-primary border-5">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h3 class="fw-bold">Classare / CoreStaff</h3>
+                            <span class="badge bg-primary">Full System</span>
+                        </div>
+                        <p class="card-text">A comprehensive enterprise management system built with <strong>Spring Boot 4</strong> and <strong>Java 25</strong>.
+                             Features include user authentication, role-based access control, and complex business logic.</p>
+                        <div class="mb-3">
+                            <span class="badge badge-tech">Spring Boot</span>
+                            <span class="badge badge-tech">MySQL</span>
+                            <span class="badge badge-tech">REST API</span>
+                            <span class="badge badge-tech">Security</span>
+                        </div>
+                        <a href="INSERT_GITHUB_LINK" class="btn btn-dark btn-lg w-100" target="_blank">View Full Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="text-center py-4 border-top">
+    <p class="text-muted small">© 2026 Java Backend Developer Portfolio</p>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
